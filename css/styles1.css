@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Artifika&family=Montserrat+Subrayada:wght@700&family=Nerko+One&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+:root {
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+.container {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/am.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 26rem;
+  padding-bottom: 9.6rem;
+}
+.form {
+  top: 3%;
+  position: absolute;
+  width: 27rem;
+  padding: 1.5rem 2.6rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+  color: #232836;
+  text-align: center;
+}
+
+.form .field {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+.btn {
+  background: #d18849;
+  background-image: -webkit-linear-gradient(top, #d18849, #ff7800);
+  background-image: -moz-linear-gradient(top, #d18849, #ff7800);
+  background-image: -ms-linear-gradient(top, #d18849, #ff7800);
+  background-image: -o-linear-gradient(top, #d18849, #ff7800);
+  background-image: linear-gradient(to bottom, #d18849, #ff7800);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: "Ubuntu";
+  color: #ffffff;
+  font-size: 18px;
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #666;
+  border: var(--border);
+  background: #5b8285;
+  background-image: -webkit-linear-gradient(top, #5c8e91, #bfc4c7);
+  background-image: -moz-linear-gradient(top, #99d0d4, #bfc4c7);
+  background-image: -ms-linear-gradient(top, #99d0d4, #bfc4c7);
+  background-image: -o-linear-gradient(top, #99d0d4, #bfc4c7);
+  background-image: linear-gradient(to bottom, #99d0d4, #bfc4c7);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.button-field {
+  padding: 0.6rem 0;
+  position: relative;
+  left: 30%;
+  max-width: 40%;
+  text-align: center;
+}
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+.form a {
+  color: #7d4b09;
+  text-decoration: underline;
+}
+.form a:hover {
+  color: rgb(22, 138, 228);
+}
+.line {
+  position: relative;
+  height: 0.7px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: black;
+}
+.line::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
+  padding: 0 15px;
+}
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.google-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+img.google-img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+a.google {
+  text-decoration: none;
+  border: 1.5px solid grey;
+  background-color: #fff;
+}
+a.google span {
+  font-weight: 500;
+  opacity: 0.6;
+  color: #130f40;
+}
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 20px 10px;
+  }
+}
