@@ -24,7 +24,7 @@
   background-position: center;
   background-size: cover;
   padding-top: 26rem;
-  padding-bottom: 9.6rem;
+  padding-bottom: 50rem;
 }
 .form {
   top: 3%;
@@ -165,6 +165,23 @@ a.google span {
 }
 @media screen and (max-width: 400px) {
   .form {
-    padding: 20px 10px;
+    padding: 10px 10px;
+  }
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form {
+    padding: 10px 10px;
+  }
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding-bottom: 67rem;
+  }
+  .btn {
+    font-size: 50%;
   }
 }
